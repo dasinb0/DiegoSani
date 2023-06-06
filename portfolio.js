@@ -23,6 +23,15 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    function cambiarIdioma(idioma) {
+        if (idioma === 'es') {
+          location.href = 'main.html';  
+        } else if (idioma === 'en') {
+          location.href = 'index.html';  
+        }
+      }
+      
+
     // owl carousel script
     $('.carousel').owlCarousel({
     margin: 20,
